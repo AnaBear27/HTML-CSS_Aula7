@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC DOMICS</title>
+    <style>
+        *{margin: 0; text-decoration: none; list-style: none;}
+        body{background:#20242E; margin: auto; text-align: center;}
+
+        /* ÁREA DO INDEX CSS*/
+
+        #banner{width: 100%; height: 400px; background: url(imagens/banner-principal.jpg) no-repeat center; background-size: cover; background-position: center;}
+        #nav{width: 100%; height: 52px; margin: auto;}
+        #nav ul{width: 800px; height: 52px; margin: auto;}
+        #nav ul li{display: inline-block;}
+        #nav ul li a{font: normal 16px verdana; padding: 0 10px; color: #FFF; line-height: 52px; display: inline-block;}
+        #nav ul li a:hover{background: #9e9c9c;}
+        .linha-vert{border-left: 1px solid white; line-height: 52px; margin: 0 5px;}
+
+        /*LEGO E TRAILERS CSS*/
+
+        #container{clear: both; width: 1000px; height: auto; background: #000000; margin: auto; padding-top: 1px;}
+        .bg-titulo{width: 340px; background: #FFF no-repeat; margin-top: 5px;}
+        .titulo{font: bold 16px verdana; text-align: left; margin: 3px 0;}
+        #destaque{margin: 15px auto; width: 808px; height: 295px;}
+        .ajuda-destaque{float: left; margin: 0 5px;}
+        #trailers{width: 1000px; height: 165px; margin: auto;}
+        #container-trailer{width: 744px; height: 137px; margin: 15px auto;}
+        .ajuste-trailer{width: 244px; float: left; margin: 0 2px;}
+        .texto-trailer{width: 244px; height: 20px; background: #354343; color: #FFF; font: normal 12px arial; line-height: 20px;}
+
+        /*PRODUTOS EM DESTAQUE CSS*/
+
+        #lojadc{width: 1000px; height: 420px; margin: auto;}
+        #container-loja{width: 672px; margin: auto;}
+        .ajuste-produto{width: 220px; margin: 15px 2px; float: left;}
+        .texto-prod{font: normal 12px arial; margin: 0; color: white;}
+        .destaque-preco{font: bold 14px arial; color: red;}
+
+        /*RODAPÉ */
+
+        footer{width: 100%; height: 300px; padding-top: 1px; background: url(imagens/banner-rodape.webp) no-repeat center; background-size: cover; background-position: center;}
+        #container-footer{width: 1000px; height: 200px; margin: 15px auto;}
+        .nav-footer{width: 150px; float: left; margin: 0 10px;}
+        .titulo-footer{width: 150px; font: bold 14px arial; color: black; text-align: left; margin: 10px 0;}
+        .nav-footer ul li{width: 150px; height: 20px; text-align: left;}
+        .nav-footer ul li a{font: normal 12px arial; color: black;}
+
+        /*REDES SOCIAIS*/
+        #redes-sociais{width: 100%; height: 70px; background: #20242E;}
+        .icones-rs{width: 100px; height: 70px; background: #20242E; margin: auto;}
+        .ajusta-img{margin: 15px 1px;}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <figure>
+            <img id="banner" />
+        </figure>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">HOME</a><span class="linha-vert"></span></li>
+                <li><a href="#">NOVIDADES</a><span class="linha-vert"></span></li>
+                <li><a href="#">EPISÓDIOS</a><span class="linha-vert"></span></li>
+                <li><a href="#">TEMPORADAS</a><span class="linha-vert"></span></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--LEGO E TRAILERS-->
+
+    <section id="container">
+        <div class="bg-titulo"><h1 class="titulo">AVENTURA LEGO</h1></div>
+        <figure id="destaque">
+            <div class="ajuda-destaque">
+                <img src="imagens/aventura-lego1.webp" alt="Lego 1" width="190">
+            </div>
+            <div class="ajuda-destaque">
+                <img src="imagens/aventura-lego2.jpg" alt="Lego 2" width="187">
+            </div>
+            <div class="ajuda-destaque">
+                <img src="imagens/aventura-lego3.webp" alt="Lego 3" width="195">
+            </div>
+            <div class="ajuda-destaque">
+                <img src="imagens/aventura-lego4.jpg" alt="Lego 4" width="195">
+        </figure>
+
+        <div class="bg-titulo"><h1 class="titulo">TRAILERS</h1></div>
+        <figure id="trailers">
+            <div id="container-trailer">
+                <div class="ajuste-trailer">
+                    <img src="imagens/trailer1.jpg" alt="Mulher-Maravilha" width="240">
+                    <a href="https://www.youtube.com/watch?v=VSB4wGIdDwo" target="_blank"><figcaption class="texto-trailer">Play</figcaption></a>
+                </div>
+                <div class="ajuste-trailer">
+                    <img src="imagens/trailer2.jpg" alt="Aquaman" width="240">
+                    <a href="https://www.youtube.com/watch?v=hHh5Rs--DAE" target="_blank"><figcaption class="texto-trailer">Play</figcaption></a>
+                </div>
+                <div class="ajuste-trailer">
+                    <img src="imagens/trailer3.jpg" alt="Ciborgue" width="240">
+                    <a href="https://www.youtube.com/watch?v=dI2xxH2tg-s" target="_blank"><figcaption class="texto-trailer">Play</figcaption></a>
+                </div>
+            </div>
+        </figure>
+
+        <!--PRODUTOS EM DESTAQUE-->
+
+        <div class="bg-titulo"><h1 class="titulo">LOJA DC COMICS</h1></div>
+        <figure id="lojadc">
+            <div id="container-loja">
+                <div class="ajuste-produto">
+                    <img src="imagens/roupas.jpg" alt="" width="200"/>
+                    <p class="texto-prod">Camiseta Feminina Wonder Woman Shield</p><p class="destaque-preco">Por: R$80,00</p><p class="texto-prod">ou 3x Sem juros de R$26,66</p>
+                </div>
+            </div>
+            <div id="container-loja">
+                <div class="ajuste-produto">
+                    <img src="imagens/roupas2.jpg" alt="" width="217"/>
+                    <p class="texto-prod">Camiseta Girl Power</p><p class="destaque-preco">Por: R$90,00</p><p class="texto-prod">ou 3x Sem juros de R$30,00</p>
+                </div>
+            </div>
+            <div id="container-loja">
+                <div class="ajuste-produto">
+                    <img src="imagens/roupas3.jpg" alt="" width="150"/>
+                    <p class="texto-prod">Camiseta Masculina</p><p class="destaque-preco">Por: R$69,90</p><p class="texto-prod">ou 3x Sem juros de R$23,90</p>
+                </div>
+            </div>
+        </figure>
+    </section>
+
+    <!--RODAPÉ-->
+    <footer>
+        <div id="container-footer">
+            <nav class="nav-footer">
+                <h1 class="titulo-footer">DC COMICS</h1>
+                <ul>
+                    <li><a href="#">Características</a></li>
+                    <li><a href="#">Quadrinhos</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Jogos</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-footer">
+                <h1 class="titulo-footer">NOTÍCIAS</h1>
+                <ul>
+                    <li><a href="#">Para Fãs</a></li>
+                    <li><a href="#">Para Famílias</a></li>
+                    <li><a href="#">Para Imprimir</a></li>
+                </ul>
+            </nav>
+            <nav class="nav-footer">
+                <h1 class="titulo-footer">LOJA</h1>
+                <ul>
+                    <li><a href="#">Shop DC</a></li>
+                    <li><a href="#">Shop DC Colecionadores</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <!--REDES SOCIAIS-->
+
+    <div id="redes sociais">
+        <div class="icones-rs">
+            <figure>
+                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img class="ajusta-img" src="imagens/facebook.png" alt="" width="20"></a>
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D&mx=2" target="_blank"><img class="ajusta-img" src="imagens/twitter.png" alt="" width="20"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img class="ajusta-img" src="imagens/instagram.png" alt="" width="20"></a>
+                <a href="https://br.pinterest.com/" target="_blank"><img class="ajusta-img" src="imagens/pinterest-1-logo-black-and-white.png" alt="" width="20"></a>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
